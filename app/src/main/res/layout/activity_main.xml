@@ -35,7 +35,7 @@
         android:orientation="horizontal"
         android:gravity="center_vertical"
         android:background="@drawable/shape"
-        android:padding="8dp">
+        android:minHeight="48dp">
 
         <ImageView
             android:layout_width="24dp"
@@ -46,8 +46,9 @@
         <EditText
             android:id="@+id/username"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
+            android:layout_marginStart="5dp"
             android:fontFamily="@font/poppins_regular"
             android:hint="Nama Pemesan"
             android:background="@null"
@@ -60,9 +61,7 @@
         android:orientation="horizontal"
         android:gravity="center_vertical"
         android:background="@drawable/shape"
-        android:padding="8dp">
-
-
+        android:minHeight="48dp">
         <ImageView
             android:layout_width="24dp"
             android:layout_height="24dp"
@@ -75,7 +74,9 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textSize="18sp"
+            android:minHeight="48dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="20sp"
             android:textAlignment="textStart"
             android:hint="jam keberengakatan"
             android:background="@null"
@@ -89,7 +90,7 @@
         android:orientation="horizontal"
         android:gravity="center_vertical"
         android:background="@drawable/shape"
-        android:padding="8dp">
+        android:minHeight="48dp">
 
         <ImageView
             android:layout_width="24dp"
@@ -102,6 +103,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:layout_marginLeft="5dp"
             android:textAlignment="textStart"
             android:textSize="18sp"
             android:hint="Pilih Tanggal Keberangkatan"
@@ -115,7 +117,7 @@
         android:orientation="horizontal"
         android:gravity="center_vertical"
         android:background="@drawable/shape"
-        android:padding="8dp">
+        android:minHeight="48dp">
 
         <ImageView
             android:layout_width="24dp"
@@ -128,20 +130,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             />
-<!--        <EditText-->
-<!--            android:id="@+id/password"-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_weight="1"-->
-<!--            android:hint="Tujuan"-->
-<!--            android:background="@null"-->
-<!--            android:fontFamily="@font/poppins_regular"/>-->
-
-<!--        <ImageView-->
-<!--            android:id="@+id/visibility"-->
-<!--            android:layout_width="24dp"-->
-<!--            android:layout_height="24dp"-->
-<!--            android:src="@drawable/baseline_arrow_drop_down_24"/>-->
     </LinearLayout>
 
     <!-- Register Button -->

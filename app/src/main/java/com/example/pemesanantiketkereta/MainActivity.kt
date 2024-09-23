@@ -28,10 +28,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         tujuan = resources.getStringArray(R.array.tujuan)
         harga = resources.getStringArray(R.array.harga)
         with(binding) {
-            // Set adapter untuk Spinner tujuan
             val adapterTujuan = ArrayAdapter(
                 this@MainActivity,
                 androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, tujuan
@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
     private fun showConfirmationDialog(nama: String, jam: String, tanggal: String, tujuan: String, harga: String) {
-        // Membuat instance dari DialogPemesanan dan menampilkan dialog
+
         val dialog = DialogPemesanan(this, nama, jam, tanggal, tujuan, harga)
         dialog.show(supportFragmentManager, "DialogPemesanan")
     }
